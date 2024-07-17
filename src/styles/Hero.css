@@ -1,0 +1,112 @@
+.hero-container {
+  max-width: 100lvw;
+  height: 100vh;
+  background-image: url("/images/hero/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+.hero-content {
+  width: 90lvw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero-carImage {
+  width: 65%;
+  position: relative;
+  right: 0;
+}
+.hero-textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+  background: transparent;
+  max-width: 450px;
+}
+.hero-textSection > p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+#hero-highlighted {
+  color: #ff4d30;
+}
+.hero-textSection > p:nth-child(2) {
+  /* background-color: purple; */
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.hero-textSection > p:nth-child(3) {
+  font-size: 14px;
+  color: rgb(84, 83, 83);
+}
+.hero-textSection-Buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.hero-textSection-Buttons > button {
+  color: #ffff;
+  font-weight: bold;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-textSection-Buttons > button:first-child {
+  background-color: #ff4d30;
+}
+.hero-textSection-Buttons > button:last-child {
+  background-color: black;
+}
+.hero-textSection-Buttons > button:last-child:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-carImage {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .hero-container {
+    background-image: none;
+    margin-bottom: 20px;
+  }
+  .hero-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .hero-textSection {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero-textSection-Buttons > button {
+    color: #ffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

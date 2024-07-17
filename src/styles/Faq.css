@@ -1,0 +1,102 @@
+.FAQ-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/faq/car.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: center;
+  gap: 10px;
+}
+
+.FAQ-container > span:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+.FAQ-container > span:nth-child(2) {
+  font-size: 30px;
+  font-weight: bold;
+}
+.FAQ-container > span:nth-child(3) {
+  font-size: 12px;
+  color: grey;
+  max-width: 500px;
+}
+
+.FAQ-Accordion-parent {
+  max-width: 600px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.Accordion-child-Question {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.Accordion-activeQue {
+  background-color: #ff4d30;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 15px 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.Accordion-ActiveAns {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 12px;
+  color: grey;
+  text-align: justify;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.Accordion-child-Answer {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 12px;
+  color: grey;
+  text-align: justify;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+#FAQ-chevron {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .FAQ-container {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .FAQ-container {
+    zoom: 80%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .FAQ-container {
+    zoom: 70%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .FAQ-container {
+    zoom: 50%;
+  }
+}

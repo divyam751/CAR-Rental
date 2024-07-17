@@ -1,0 +1,66 @@
+.download-container {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url("/images/banners/bg02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #e6e6e6;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.download-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  padding: 40px 40px 40px 80px;
+}
+.download-content > span:first-child {
+  font-size: 30px;
+  font-weight: bold;
+}
+.download-content > span:nth-child(2) {
+  font-size: 12px;
+  color: gray;
+}
+.download-content > div {
+  display: flex;
+  gap: 20px;
+}
+.download-content > div > button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-content > div > button > img {
+  border: none;
+  width: 190px;
+}
+
+@media only screen and (max-width: 768px) {
+  .download-container {
+    justify-content: center;
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 445px) {
+  .download-content {
+    zoom: 90%;
+  }
+  .download-content {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .download-content {
+    zoom: 80%;
+    height: fit-content;
+  }
+  .download-content {
+    padding: 40px;
+  }
+}
