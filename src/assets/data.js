@@ -129,4 +129,42 @@ export const accordion = [
   },
 ];
 
+export const team = [
+  {
+    id: 1,
+    name: "Luke Miller",
+    post: "Salesman",
+    image: "/images/team/1.png",
+  },
+  {
+    id: 2,
+    name: "Michael Diaz",
+    post: "Business Owner",
+    image: "/images/team/2.png",
+  },
+  {
+    id: 3,
+    name: "Briana Ross",
+    post: "Photographer",
+    image: "/images/team/3.png",
+  },
+  {
+    id: 4,
+    name: "Lauren Rivera",
+    post: "Car Detailist",
+    image: "/images/team/4.png",
+  },
+  {
+    id: 5,
+    name: "Martin Rizz",
+    post: "Mechanic",
+    image: "/images/team/5.png",
+  },
+  {
+    id: 6,
+    name: "Caitlyn Hunt",
+    post: "Manager",
+    image: "/images/team/6.png",
+  },
+];
 export default carModel;

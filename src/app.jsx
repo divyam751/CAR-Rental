@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Vehicle from "./pages/Vehicle";
 import Testimonial from "./pages/Testimonial";
+import Team from "./pages/Team";
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vehicle" element={<Vehicle />} />
         <Route path="/testimonials" element={<Testimonial />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
 
       <Footer />
