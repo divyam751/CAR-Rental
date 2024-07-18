@@ -14,16 +14,16 @@
 .download-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 500px;
+  gap: 30px;
+  max-width: 600px;
   padding: 40px 40px 40px 80px;
 }
 .download-content > span:first-child {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 .download-content > span:nth-child(2) {
-  font-size: 12px;
+  font-size: 15px;
   color: gray;
 }
 .download-content > div {
@@ -35,6 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .download-content > div > button > img {
   border: none;
@@ -47,9 +48,9 @@
     background-image: none;
   }
 }
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 540px) {
   .download-content {
-    zoom: 90%;
+    zoom: 80%;
   }
   .download-content {
     padding: 40px;
@@ -57,7 +58,16 @@
 }
 @media only screen and (max-width: 375px) {
   .download-content {
-    zoom: 80%;
+    zoom: 70%;
+    height: fit-content;
+  }
+  .download-content {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .download-content {
+    zoom: 60%;
     height: fit-content;
   }
   .download-content {

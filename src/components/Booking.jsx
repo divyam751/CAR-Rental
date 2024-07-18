@@ -9,7 +9,7 @@ const Booking = forwardRef((props, ref) => {
   return (
     <section className="booking-container" ref={ref}>
       <div className="booking-parent">
-        <h3>Book a Car</h3>
+        <h2>Book a Car</h2>
 
         <form id="booking-form" action="">
           <div className="bookingform-section">

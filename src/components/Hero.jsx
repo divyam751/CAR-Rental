@@ -12,14 +12,14 @@ const Hero = ({ bookingRef }) => {
     <section className="hero-container">
       <div className="hero-content">
         <div className="hero-textSection">
-          <p>Plan your trip now</p>
-          <p>
+          <span>Plan your trip now</span>
+          <span>
             Save <span id="hero-highlighted"> big</span> with our car rental
-          </p>
-          <p>
+          </span>
+          <span>
             Rent the car of your dreams. Unbeatable prices, unlimited miles,
             flexible pick-up options and much more.
-          </p>
+          </span>
           <div className="hero-textSection-Buttons">
             <button onClick={handleBookRideClick}>
               Book Ride {<FaCheckCircle />}

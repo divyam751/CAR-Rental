@@ -9,6 +9,7 @@
   gap: 10px;
   padding: 50px 0px;
   text-align: center;
+  zoom: 120%;
 }
 .testimonials-container > span:first-child {
   font-weight: bold;

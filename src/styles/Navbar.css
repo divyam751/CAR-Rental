@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   background-color: transparent;
   position: absolute;
   z-index: 9999;
@@ -16,7 +16,8 @@
 }
 
 .nav-logo > img {
-  height: 2.5rem;
+  height: 3rem;
+  cursor: pointer;
 }
 ul {
   display: flex;

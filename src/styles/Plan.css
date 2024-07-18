@@ -9,6 +9,9 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
   padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  zoom: 120%;
 }
 .plan-container > p:first-child {
   font-size: 20px;

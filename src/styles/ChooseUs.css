@@ -5,6 +5,7 @@
   flex-direction: column;
   align-content: center;
   padding-bottom: 100px;
+  zoom: 120%;
 }
 .chooseUs-banner {
   width: 100%;
@@ -33,6 +34,7 @@
   width: 80%;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .chooseUs-mainImage > img {
@@ -115,6 +117,12 @@
 .chooseUs-rightChild-content > span:nth-child(2) {
   font-size: 14px;
   color: gray;
+}
+
+@media only screen and (max-width: 1300px) {
+  .chooseUs-container {
+    zoom: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
