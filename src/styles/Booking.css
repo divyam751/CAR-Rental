@@ -49,6 +49,7 @@ input {
   border: none;
   margin-top: 25px;
   font-size: 16px;
+  cursor: pointer;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -76,4 +77,34 @@ input {
   .booking-container {
     height: 100vh;
   }
+}
+
+/* Notification */
+
+.booking-notification-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.booking-notification__error {
+  background-color: pink;
+  color: darkred;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.booking-notification__success {
+  background-color: palegreen;
+  color: green;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  justify-content: space-between;
+  border-radius: 10px;
 }
