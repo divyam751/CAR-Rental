@@ -11,7 +11,7 @@ import BannerBottom from "../components/BannerBottom";
 const About = () => {
   return (
     <div className="about-container">
-      <BannerTop page="about" />
+      <BannerTop page="About" />
       <div className="about-content">
         <h2>About Company</h2>
         <div className="about-content-main">

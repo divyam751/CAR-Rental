@@ -1,0 +1,134 @@
+.vehicle-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.vehicle-display {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.vehicle-displayCard {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  border: 1px solid gainsboro;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.vehicle-displayCard-img > img {
+  width: 350px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.vehicle-displayCard-desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+.vehicle-displayCard-descLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px 20px;
+  gap: 15px;
+}
+
+.vehicle-displayCard-descRight {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0px 20px;
+  gap: 20px;
+}
+
+.vehicle-displayCard-descLeft > span:first-child,
+.vehicle-displayCard-descRight > span:first-child {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+.vehicle-displayCard-descLeft > span:nth-child(2),
+.vehicle-displayCard-descRight > span:nth-child(2) {
+  margin-bottom: 20px;
+  margin-top: -15px;
+  color: black;
+  font-size: 20px;
+}
+.vehicle-displayCard-descLeft > span:nth-child(3),
+.vehicle-displayCard-descRight > span:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.vehicle-displayCard-descLeft > span:nth-child(4),
+.vehicle-displayCard-descRight > span:nth-child(4) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.vehicle-displayCard-bookRide {
+  width: 90%;
+  padding: 20px 0px;
+  border-top: 1px solid gainsboro;
+}
+
+.vehicle-displayCard-bookRideBtn {
+  background-color: #ff4d30;
+  color: #ffff;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+}
+
+@media only screen and (max-width: 1350px) {
+  .vehicle-display {
+    width: 90%;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .vehicle-display {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 930px) {
+  .vehicle-display {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .vehicle-display {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 410px) {
+  .vehicle-display {
+    zoom: 75%;
+  }
+}

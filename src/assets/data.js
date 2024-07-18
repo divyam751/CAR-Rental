@@ -2,7 +2,9 @@ const carModel = [
   {
     id: 1,
     carName: "Audi A1 S-Line",
+    displayName: "Audi A1",
     carImage: "/images/cars-big/audia1.jpg",
+    carShowImage: "/images/cars-big/audi-box.png",
     rent: "$45",
     model: "Audi",
     mark: "A1",
@@ -15,7 +17,9 @@ const carModel = [
   {
     id: 2,
     carName: "VW Golf 6",
+    displayName: "Golf 6",
     carImage: "/images/cars-big/golf6.jpg",
+    carShowImage: "/images/cars-big/golf6-box.png",
     rent: "$37",
     model: "Golf 6",
     mark: "Volkswagen",
@@ -28,7 +32,9 @@ const carModel = [
   {
     id: 3,
     carName: "Toyota Camry",
+    displayName: "Toyota",
     carImage: "/images/cars-big/toyotacamry.jpg",
+    carShowImage: "/images/cars-big/toyota-box.png",
     rent: "$30",
     model: "Camry",
     mark: "Toyota",
@@ -41,7 +47,9 @@ const carModel = [
   {
     id: 4,
     carName: "BMW 320 ModernLine",
+    displayName: "BMW 320",
     carImage: "/images/cars-big/bmw320.jpg",
+    carShowImage: "/images/cars-big/bmw-box.png",
     rent: "$35",
     model: "320",
     mark: "BMW",
@@ -54,7 +62,9 @@ const carModel = [
   {
     id: 5,
     carName: "Mercedes-Benz GLK",
+    displayName: "Benz GLK",
     carImage: "/images/cars-big/benz.jpg",
+    carShowImage: "/images/cars-big/benz-box.png",
     rent: "$50",
     model: "Benz GLK",
     mark: "Mercedes",
@@ -67,7 +77,9 @@ const carModel = [
   {
     id: 6,
     carName: "VW Passat CC",
+    displayName: "Passat CC",
     carImage: "/images/cars-big/passatcc.jpg",
+    carShowImage: "/images/cars-big/passat-box.png",
     rent: "$25",
     model: "Passat CC",
     mark: "Volkswagen",
