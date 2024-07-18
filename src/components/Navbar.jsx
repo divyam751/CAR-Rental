@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Navbar.css";
 import logo from "/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiCrossMark } from "react-icons/gi";
 
@@ -9,9 +9,13 @@ import { useState } from "preact/hooks";
 
 const Navbar = () => {
   const [hamburger, setHamburger] = useState(true);
+  const navigate = useNavigate();
+  const handleHome = () => {
+    navigate("/");
+  };
   return (
     <nav className="nav-container">
-      <div className="nav-logo">
+      <div className="nav-logo" onClick={handleHome}>
         <img src={logo} alt="car-logo" />
       </div>
       <div className="nav-links">

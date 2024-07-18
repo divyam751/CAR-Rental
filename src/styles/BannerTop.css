@@ -1,0 +1,46 @@
+.banner-container {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/banners/top-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.banner-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content {
+  width: 300px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content > span:first-child {
+  font-size: 30px;
+}
+#banner-homeRoute {
+  cursor: pointer;
+}
+#banner-homeRoute:hover {
+  color: #ff4d30;
+}
