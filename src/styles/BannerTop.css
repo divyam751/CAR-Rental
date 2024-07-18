@@ -44,3 +44,11 @@
 #banner-homeRoute:hover {
   color: #ff4d30;
 }
+
+@media only screen and (max-width: 425px) {
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

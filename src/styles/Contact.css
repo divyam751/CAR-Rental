@@ -1,0 +1,121 @@
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-content {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  background-image: url("/images/banners/bg-contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 10px;
+}
+.contact-left > span:first-child {
+  font-size: 40px;
+  font-weight: bold;
+}
+.contact-left > span:nth-child(2) {
+  font-size: 16px;
+  text-align: justify;
+  color: gray;
+  margin: 30px 0px;
+}
+.contact-leftDetails {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Right Child */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  gap: 20px;
+}
+.contact-form > label {
+  font-weight: bold;
+}
+.contact-form > input,
+textarea {
+  margin-top: -15px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.contact-formSubmitBtn {
+  background-color: #ff4d30;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  .contact-left {
+    align-items: center;
+  }
+  .contact-left > span:nth-child(2) {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  .contact-left {
+    align-items: center;
+  }
+  .contact-left > span:nth-child(2) {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 300px;
+  }
+}

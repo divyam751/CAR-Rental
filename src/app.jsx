@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Vehicle from "./pages/Vehicle";
 import Testimonial from "./pages/Testimonial";
 import Team from "./pages/Team";
+import Contact from "./pages/Contact";
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Route path="/vehicle" element={<Vehicle />} />
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />
