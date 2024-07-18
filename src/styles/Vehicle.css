@@ -58,10 +58,16 @@
   font-size: 25px;
   color: black;
 }
-.vehicle-displayCard-descLeft > span:nth-child(2),
-.vehicle-displayCard-descRight > span:nth-child(2) {
+.vehicle-displayCard-descLeft > span:nth-child(2) {
   margin-bottom: 20px;
   margin-top: -15px;
+  color: black;
+  font-size: 20px;
+}
+
+.vehicle-displayCard-descRight > span:nth-child(2) {
+  margin-bottom: 20px;
+  margin-top: -26px;
   color: black;
   font-size: 20px;
 }
