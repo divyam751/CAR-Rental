@@ -1,0 +1,168 @@
+.bookingModel-container {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingModal__title {
+  background-color: #ff4d30;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+}
+
+.bookingModal__title > span:nth-child(2) {
+  cursor: pointer;
+}
+
+.bookingModal__message {
+  background-color: #ffedea;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 25px;
+  gap: 10px;
+}
+
+.bookingModal__message > div {
+  color: #ff4d30;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+.bookingModal__message > span {
+  color: grey;
+  font-size: 18px;
+}
+
+/* Car Info section */
+
+.bookingModal__carInfo {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bookingModal__carInfo_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  gap: 20px;
+}
+.bookingModal__carInfo_left > span {
+  color: #ff4d30;
+  font-weight: bold;
+}
+.bookingModal_left-row {
+  display: flex;
+  /* align-items: center; */
+  gap: 5px;
+}
+.bookingModal_left-row > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+.bookingModal_left-row > div > span > input {
+  height: 2px;
+}
+
+.bookingModal__carInfo_right {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #ff4d30;
+  height: 100%;
+  gap: 30px;
+  padding: 15px 20px;
+}
+.bookingModal__carInfo_right > img {
+  width: 400px;
+}
+
+/* Personal Info */
+.bookingModal_personalInfo {
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bookingModal_personalInfo > span {
+  color: #ff4d30;
+  font-weight: bold;
+}
+
+.personalInfo__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.personalInfo_grid2col {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.personalInfo_inputBox {
+  display: flex;
+  flex-direction: column;
+  color: rgb(117, 113, 113);
+}
+.personalInfo_inputBox > input {
+  padding: 10px;
+  background-color: gainsboro;
+  border: none;
+  font-size: 16px;
+}
+.personalInfo_inputBox > span:last-child {
+  font-size: 10px;
+  color: black;
+}
+.bookingModal__stars {
+  color: #ff4d30;
+}
+
+.personalInfo_inputBoxS {
+  margin: 20px 0px;
+}
+
+.personalInfo_checkBox {
+  display: flex;
+  gap: 15px;
+}
+.personalInfo_checkBox > input {
+  width: 20px;
+}
+
+.personalInfo_submitBtn_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 40px 0px 100px;
+}
+.personalInfo_submitBtn {
+  background-color: #ff4d30;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}

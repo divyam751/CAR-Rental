@@ -108,3 +108,15 @@ input {
   justify-content: space-between;
   border-radius: 10px;
 }
+
+/* Booking Modal */
+.bookingModal-overlay {
+  width: 53rem;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  top: 5%;
+}

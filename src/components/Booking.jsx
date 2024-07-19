@@ -5,6 +5,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { forwardRef, useState } from "preact/compat";
 import { RxCross2 } from "react-icons/rx";
+import BookingModal from "./BookingModal";
+import carModel from "../assets/data";
 
 const Booking = forwardRef((props, ref) => {
   const [searchData, setSearchData] = useState({
@@ -18,8 +20,12 @@ const Booking = forwardRef((props, ref) => {
   const [notificationClass, setNotificationClass] = useState("");
   const [message, setMessage] = useState("");
 
+  // Booking Modal
+  const [modal, setModal] = useState(false);
+
   const handleSearch = (e) => {
     e.preventDefault();
+
     for (let key in searchData) {
       if (searchData[key] === "") {
         setNotification(true);
@@ -30,16 +36,47 @@ const Booking = forwardRef((props, ref) => {
     }
 
     if (!notification) {
-      setNotification(true);
-      setNotificationClass("booking-notification__success");
-      setMessage("Check your email to confirm an order.");
+      setModal(true);
+
+      const fetchCar = carModel.filter((car) => {
+        return car.carName === searchData.carType;
+      });
+
+      const updatedSearchData = {
+        ...searchData,
+        carImage: fetchCar[0].carImage,
+      };
+
+      setSearchData(updatedSearchData);
+
+      setModal(true);
     }
+  };
+
+  const handleReserveBtn = () => {
+    setModal(false);
+    setNotification(true);
+    setNotificationClass("booking-notification__success");
+    setMessage("Check your email to confirm an order.");
+
+    //  Clear Booking car fields Data
+    setSearchData({
+      carType: "",
+      pickupLocation: "",
+      dropOfLocation: "",
+      pickupDate: "",
+      dropOfDate: "",
+    });
   };
 
   const closeNotification = () => {
     setNotification(false);
     setNotificationClass("");
     setMessage("");
+  };
+
+  const closeBookingModal = () => {
+    setModal(false);
   };
 
   const handleChange = (e) => {
@@ -53,6 +90,18 @@ const Booking = forwardRef((props, ref) => {
 
   return (
     <section className="booking-container" ref={ref}>
+      {modal ? (
+        <div className="bookingModal-overlay">
+          {" "}
+          <BookingModal
+            closeBookingModal={closeBookingModal}
+            searchData={searchData}
+            handleReserveBtn={handleReserveBtn}
+          />{" "}
+        </div>
+      ) : (
+        ""
+      )}
       <div className="booking-parent">
         <h2>Book a Car</h2>
 
