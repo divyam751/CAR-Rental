@@ -91,13 +91,15 @@ const Booking = forwardRef((props, ref) => {
   return (
     <section className="booking-container" ref={ref}>
       {modal ? (
-        <div className="bookingModal-overlay">
-          {" "}
-          <BookingModal
-            closeBookingModal={closeBookingModal}
-            searchData={searchData}
-            handleReserveBtn={handleReserveBtn}
-          />{" "}
+        <div className="bookingModal-overlayBack">
+          <div className="bookingModal-overlay">
+            {" "}
+            <BookingModal
+              closeBookingModal={closeBookingModal}
+              searchData={searchData}
+              handleReserveBtn={handleReserveBtn}
+            />{" "}
+          </div>
         </div>
       ) : (
         ""

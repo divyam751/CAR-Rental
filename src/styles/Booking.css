@@ -110,7 +110,9 @@ input {
 }
 
 /* Booking Modal */
-.bookingModal-overlay {
+
+.bookingModal-overlay,
+.bookingModal-overlayBack {
   width: 53rem;
   height: 100vh;
   position: fixed;
@@ -119,4 +121,15 @@ input {
   justify-content: center;
   background-color: white;
   top: 5%;
+}
+.bookingModal-overlayBack {
+  width: 100%;
+  top: 0;
+  background-color: rgba(78, 76, 76, 0.7);
+}
+
+@media only screen and (max-width: 900px) {
+  .bookingModal-overlay {
+    width: 33rem;
+  }
 }

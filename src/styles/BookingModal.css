@@ -166,3 +166,14 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 900px) {
+  .bookingModal__carInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bookingModal__carInfo_left {
+    align-items: center;
+  }
+}
