@@ -8,6 +8,8 @@ import Vehicle from "./pages/Vehicle";
 import Testimonial from "./pages/Testimonial";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
+import Register from "./pages/Register";
 
 export function App() {
   return (
@@ -20,6 +22,8 @@ export function App() {
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
 
       <Footer />

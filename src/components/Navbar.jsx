@@ -13,6 +13,10 @@ const Navbar = () => {
   const handleHome = () => {
     navigate("/");
   };
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
   return (
     <nav className="nav-container">
       <div className="nav-logo" onClick={handleHome}>
@@ -62,7 +66,9 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <button className="nav-buttons-register">Register</button>
+        <button className="nav-buttons-register" onClick={handleRegister}>
+          Register
+        </button>
       </div>
 
       <div className="nav-hamburger" onClick={() => setHamburger(!hamburger)}>
@@ -115,8 +121,10 @@ const Navbar = () => {
                     Sign In
                   </Link>
                 </li>
-                <button className="nav-buttons-register">Register</button>
               </ul>
+              <button className="nav-buttons-register" onClick={handleRegister}>
+                Register
+              </button>
             </div>
           </>
         )}
