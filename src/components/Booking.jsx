@@ -155,11 +155,12 @@ const Booking = forwardRef((props, ref) => {
               onChange={handleChange}
             >
               <option value="">Select pick up location</option>
-              <option value="Belgrade">Belgrade</option>
-              <option value="Novi Sad">Novi Sad</option>
-              <option value="Nis">Nis</option>
-              <option value="Kragujevac">Kragujevac</option>
-              <option value="Subotica">Subotica</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Noida">Noida</option>
+              <option value="Gurugram">Gurugram</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Goa">Goa</option>
             </select>
           </div>
           <div className="bookingform-section">
@@ -175,11 +176,12 @@ const Booking = forwardRef((props, ref) => {
               onChange={handleChange}
             >
               <option value="">Select drop of location</option>
-              <option value="Belgrade">Belgrade</option>
-              <option value="Novi Sad">Novi Sad</option>
-              <option value="Nis">Nis</option>
-              <option value="Kragujevac">Kragujevac</option>
-              <option value="Subotica">Subotica</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Noida">Noida</option>
+              <option value="Gurugram">Gurugram</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Goa">Goa</option>
             </select>
           </div>
           <div className="bookingform-section">
