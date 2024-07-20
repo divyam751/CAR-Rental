@@ -92,6 +92,7 @@
   margin-top: 10px;
   border: none;
   box-shadow: rgba(191, 186, 190, 0.4) 5px 5px;
+  cursor: pointer;
 }
 
 /* Responsive */

@@ -16,7 +16,7 @@ const Home = () => {
       <Hero bookingRef={bookingRef} />
       <Booking ref={bookingRef} />
       <Plan />
-      <CarModel />
+      <CarModel bookingRef={bookingRef} />
       <ChooseUs />
       <Testimonials />
       <Faq />

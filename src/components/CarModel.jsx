@@ -4,12 +4,16 @@ import carImg from "/images/cars-big/audia1.jpg";
 import carModel from "../assets/data";
 import { useEffect, useState } from "preact/hooks";
 
-const CarModel = () => {
+const CarModel = ({ bookingRef }) => {
   const [carData, setCarData] = useState({});
   const [selectedCarId, setSelectedCarId] = useState(0);
   const buttonStyle = {
     backgroundColor: "#ff4d30",
     color: "white",
+  };
+
+  const handleBookRideClick = () => {
+    bookingRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleCarName = (carId) => {
@@ -117,7 +121,9 @@ const CarModel = () => {
             </div>
           </div>
 
-          <button className="carModel-reserveBtn">RESERVE NOW</button>
+          <button className="carModel-reserveBtn" onClick={handleBookRideClick}>
+            RESERVE NOW
+          </button>
         </div>
       </div>
     </section>
