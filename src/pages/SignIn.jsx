@@ -3,6 +3,9 @@ import "../styles/SignIn.css";
 import carImg from "/images/login/loginCar.png";
 import { useState } from "preact/hooks";
 import { useNavigate } from "react-router-dom";
+import { Bounce, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { PiConfettiBold } from "react-icons/pi";
 
 const SignIn = () => {
   const [user, setUser] = useState({
@@ -25,6 +28,32 @@ const SignIn = () => {
   const hanldeSignup = () => {
     navigate("/register");
   };
+
+  const notifySuccess = (fullName) =>
+    toast.success(`Welcome ${fullName.split(" ")[0]} 🎉`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+  const notifyError = (fullName) =>
+    toast.error(`Wrong Credentials 🥺`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+
   const handleSignin = (e) => {
     e.preventDefault();
 
@@ -35,9 +64,12 @@ const SignIn = () => {
     currentUser = currentUser[0];
 
     if (currentUser && currentUser.password === user.password) {
-      alert("Login successfull");
+      notifySuccess(currentUser.fullName);
+      setTimeout(() => {
+        navigate("/");
+      }, 4000);
     } else {
-      alert("Login failed");
+      notifyError();
     }
   };
 
@@ -83,6 +115,19 @@ const SignIn = () => {
             </span>
           </form>
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
       </div>
     </div>
   );

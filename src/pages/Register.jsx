@@ -3,6 +3,9 @@ import "../styles/Register.css";
 import carImg from "/images/login/loginCar.png";
 import { useState } from "preact/hooks";
 import { useNavigate } from "react-router-dom";
+import { Bounce, ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const [user, setUser] = useState({
@@ -26,6 +29,32 @@ const Register = () => {
   const handleSignIn = () => {
     navigate("/signin");
   };
+
+  const notifySuccess = () =>
+    toast.success(`Register successfully 🎉`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+  const notifyError = () =>
+    toast.error(`Email already registed`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -39,13 +68,17 @@ const Register = () => {
     ifUserPresent = ifUserPresent[0];
 
     if (ifUserPresent) {
-      alert("Email already registed");
+      notifyError();
+      // alert("Email already registed");
     } else {
       existingUsers.push(user);
       localStorage.setItem("users", JSON.stringify(existingUsers));
+      notifySuccess();
     }
 
-    navigate("/signin");
+    setTimeout(() => {
+      navigate("/signin");
+    }, 3000);
   };
   return (
     <div className="register-container">
@@ -93,6 +126,19 @@ const Register = () => {
             </span>
           </form>
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
       </div>
     </div>
   );
